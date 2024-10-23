@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web bb</title>
+    
+</head>
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color:#fff;
+  background-color: black;
+}
+.navbar {
+
+  background-color:grey;
+  padding:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 20px;
+  height: auto;
+  width: auto;
+}
+
+#username, #password{
+  padding: 5px;
+  margin: 5px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#login {
+            border-style: solid;
+            border-color: black;
+            padding: 4px;
+            margin: 3px;
+            border-radius: 10px;
+}
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-list {
+  list-style: none;
+  margin:0px;
+  padding:0px;
+  display: flex;
+}
+
+.nav-list li {
+  position : relative;
+  right:100px;
+  margin-right: 20px;
+}
+
+.nav-list a:hover {
+  color:black;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.rightnav {
+  display: flex;
+  align-items: center;
+}
+.menubar
+    {
+        display: inline-block;
+    }
+    .menu {
+        background-color: grey;
+        color: black;
+        padding: 7px;
+        border: none;
+        cursor: pointer;
+    }
+    .menulist {
+        display:none;
+        position: absolute;
+        background-color: grey;
+        z-index: 1;
+    }
+    .menulist a {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+    }
+    .menulist a:hover {
+        background-color: white;
+    }
+    .menubar:hover .menu {
+        background-color: grey;
+    }
+    .menubar:hover .menulist {
+        display: block;
+    }
+
+</style>
+<body>
+  <header>
+        <nav class="navbar background">
+          <div class="logo">
+            <img src="umbrella-removebg-preview.png" alt="Logo">
+          </div>
+          <div class="menubar">
+            <button class="menu">social media</button>
+            <div class="menulist">
+                <a href="https://www.instagram.com/auf_alfirdaus/">instagram</a>
+                <a href="https://x.com/aufalfirdausi">twitter</a>
+                <a href="https://github.com/aufalfirdausi">github</a>
+            </div>
+          <ul class="nav-list">
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">what is html</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">what is css</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">what is css layouting</a></li>
+          </ul>
+        </div>
+          <div class="userpass">
+            <label for="username">
+                username :
+                <input type="text" requeired id="username"><br>
+            </label>
+            <label  for="password">
+                password :
+                <input type="password" requeired id="password">
+            </label>
+            <input type="submit" id="login">
+            </form>  
+          </div>
+        </nav>
+        </header> 
+
+
+</body>
+</html>
