@@ -1,2 +1,2 @@
 # training web
-pengenalan tentang html dan css 
+pengenalan tentang html dan css  

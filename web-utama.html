@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Halaman Web Responsif dan Menarik</title>
+    <title>web utama</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <style>
@@ -32,6 +32,10 @@ body {
 header {
     background-color: #4CAF50;
     padding: 20px;
+    margin:5px 5px ;
+    border-style: solid;
+    border-color:#4CAF50 ;
+    border-radius: 20px;
 }
 
 .header-container {
@@ -64,14 +68,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(45, 110, 46);;
 }
 
 /* Container */
 .container {
+    display: grid;
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* Subtitle */
@@ -87,6 +94,8 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    align-items: center;
+
 }
 
 .card {
@@ -95,7 +104,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .card h3 {
@@ -181,39 +190,35 @@ footer {
                 <li><a href="profile.html" target="_blank">profile</a></li>
                 <li><a href="referensi.html" target="_blank">Referensi saya</a></li>
                 <li><a href="#login" target="_blank">login</a></li>
+                <!--karna login butuh yang namanya database jadi ini gausah dulu-->
             </ul>
         </nav>
     </div>
 </header>
 
 <div class="container">
-    <section id="tentang">
-        <h2 class="subtitle">html</h2>
-        <p>Kami adalah tim kreatif yang berdedikasi untuk memberikan konten berkualitas tinggi dan inovatif. Dengan fokus pada desain modern dan teknologi terkini, kami berusaha untuk menciptakan pengalaman pengguna yang luar biasa.</p>
-    </section>
-
-    <section id="layanan">
-        <h2 class="subtitle">Layanan Kami</h2>
+    <section class="layanan">
+        <h2 class="subtitle">Tentang Web Ini</h2>
         <div class="service-cards">
             <div class="card">
-                <h3>Pengembangan Web</h3>
-                <p>Kami menciptakan situs web yang menarik, responsif, dan mudah diakses untuk segala kebutuhan bisnis Anda.</p>
+                <h3>tujuan pembuatan</h3>
+                <p>tujuan dari pembuatan dari laman web ini hanyalah sebagai tempat tempat uji coba dan pengaplikasian terhadap ilmu setelah belajar</p>
             </div>
             <div class="card">
-                <h3>Desain Grafis</h3>
-                <p>Desain visual yang kreatif dan profesional untuk kebutuhan pemasaran dan identitas merek Anda.</p>
+                <h3>isi dari laman ini</h3>
+                <p>secara signifikan sebenarnya tidak terdapat apa-apa didalam sini, melainkan hanya sebagai lahan uji coba</p>
             </div>
             <div class="card">
-                <h3>Pemasaran Digital</h3>
-                <p>Kampanye pemasaran yang terfokus untuk meningkatkan jangkauan dan konversi pelanggan Anda.</p>
+                <h3>manfaat dari pembuatannya</h3>
+                <p>manfaat dari pembuatan dari web ini adalah untuk mengaplikasikan apa yang dipelajari sebelum ini</p>
             </div>
         </div>
     </section>
 
-    <section id="kontak">
+    <!--<section id="kontak">
         <h2 class="subtitle">Hubungi Kami</h2>
         <p>Jika Anda memiliki pertanyaan atau ingin bekerja sama, hubungi kami melalui email atau media sosial kami. Kami selalu siap membantu!</p>
-    </section>
+    </section>-->
 </div>
 
 <footer>
