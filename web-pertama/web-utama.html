@@ -32,6 +32,10 @@ body {
 header {
     background-color: #4CAF50;
     padding: 20px;
+    margin:5px 5px ;
+    border-style: solid;
+    border-color:#4CAF50 ;
+    border-radius: 20px;
 }
 
 .header-container {
@@ -64,14 +68,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(45, 110, 46);;
 }
 
 /* Container */
 .container {
+    display: grid;
     padding: 50px 20px;
     max-width: 1200px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 /* Subtitle */
@@ -87,9 +94,11 @@ nav ul li a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    align-items: center;
+
 }
 
-. {
+.card {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -98,28 +107,6 @@ nav ul li a:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-.subtitle {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Service Cards */
-.ujicobalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gambar {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.5s ease-in-out;
-}
 .card h3 {
     color: #4CAF50;
     font-size: 1.5rem;
@@ -210,12 +197,10 @@ footer {
 </header>
 
 <div class="container">
-    
-
-    <section id="layanan">
+    <section class="layanan">
         <h2 class="subtitle">Tentang Web Ini</h2>
         <div class="service-cards">
-            <!--<div class="card">
+            <div class="card">
                 <h3>tujuan pembuatan</h3>
                 <p>tujuan dari pembuatan dari laman web ini hanyalah sebagai tempat tempat uji coba dan pengaplikasian terhadap ilmu setelah belajar</p>
             </div>
@@ -224,16 +209,12 @@ footer {
                 <p>secara signifikan sebenarnya tidak terdapat apa-apa didalam sini, melainkan hanya sebagai lahan uji coba</p>
             </div>
             <div class="card">
-                <h3>Pemasaran Digital</h3>
-                <p>Kampanye pemasaran yang terfokus untuk meningkatkan jangkauan dan konversi pelanggan Anda.</p>
+                <h3>manfaat dari pembuatannya</h3>
+                <p>manfaat dari pembuatan dari web ini adalah untuk mengaplikasikan apa yang dipelajari sebelum ini</p>
             </div>
         </div>
-    </section>-->
-    <div class="ujicobalogo">
-        <img src="umbrella-removebg-preview.png" alt="uji coba gambar" class="gambar"><br>
-        <h3>isi dari laman web ini</h3><br>
-        <p>secara signifikan sebenarnya tidak terdapat apa-apa didalam sini, melainkan hanya sebagai lahan uji coba</p>
-    </div>
+    </section>
+
     <!--<section id="kontak">
         <h2 class="subtitle">Hubungi Kami</h2>
         <p>Jika Anda memiliki pertanyaan atau ingin bekerja sama, hubungi kami melalui email atau media sosial kami. Kami selalu siap membantu!</p>
@@ -243,6 +224,5 @@ footer {
 <footer>
     <p>&copy; copyright by aufaa</p>
 </footer>
-
 </body>
 </html>
